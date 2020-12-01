@@ -1,0 +1,9 @@
+a:
+  actions:
+    - echo "Hello, $NAME"
+  dependencies:
+    - b
+
+b:
+  actions:
+    - export NAME="Gabriel Goffart"
