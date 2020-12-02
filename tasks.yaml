@@ -1,9 +1,16 @@
 a:
   actions:
-    - echo "Hello, $NAME"
+  - echo "Hello, $NAME"
   dependencies:
-    - b
+  - b
+  - c
 
 b:
   actions:
-    - export NAME="Gabriel Goffart"
+  - export NAME="Gabriel Goffart"
+  dependencies:
+  - c
+
+c:
+  actions:
+  - echo ""
