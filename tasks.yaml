@@ -1,16 +1,16 @@
 a:
   actions:
-  - echo "Hello, $NAME"
+  - echo 'Hello, ${NAME}'
   dependencies:
   - b
   - c
 
 b:
   actions:
-  - export NAME="Gabriel Goffart"
+  - echo "second task!\n"
   dependencies:
   - c
 
 c:
   actions:
-  - echo ""
+  - echo "First task!"
