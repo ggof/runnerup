@@ -1,16 +1,20 @@
 a:
   actions:
-  - echo 'Hello, ${NAME}'
+    - echo Last task (a)!
   dependencies:
-  - b
-  - c
+    - b
+    - c
 
 b:
   actions:
-  - echo "second task!\n"
+    - echo second task (b)!
   dependencies:
-  - c
+    - d
 
 c:
   actions:
-  - echo "First task!"
+    - echo second task (c)!
+
+d:
+  actions:
+    - echo first task (d)!
